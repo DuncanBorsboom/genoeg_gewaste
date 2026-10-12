@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#2e7d4f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Netwerk: globe met verbindingen -->
+  <circle cx="32" cy="32" r="22"/>
+  <ellipse cx="32" cy="32" rx="10" ry="22"/>
+  <line x1="10" y1="32" x2="54" y2="32"/>
+  <path d="M14 20c10 5 26 5 36 0" stroke-width="2.5" opacity="0.7"/>
+  <path d="M14 44c10-5 26-5 36 0" stroke-width="2.5" opacity="0.7"/>
+</svg>

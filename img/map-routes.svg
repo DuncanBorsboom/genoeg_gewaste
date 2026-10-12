@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" fill="none" aria-hidden="true">
+  <!-- Reisebewegingen: kaart met podia en routes -->
+  <defs>
+    <marker id="dotG" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="6" markerHeight="6">
+      <circle cx="4" cy="4" r="3.5" fill="#2e7d4f"/>
+    </marker>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6fd08c"/>
+      <stop offset="1" stop-color="#2e7d4f"/>
+    </linearGradient>
+  </defs>
+  <!-- abstract landmass -->
+  <path d="M30 30 C 60 12 120 8 170 18 C 210 26 228 52 222 84 C 216 116 180 140 130 142 C 80 144 30 128 18 96 C 8 68 10 42 30 30 Z" fill="#e9f3ea" stroke="#c9e2cd" stroke-width="2"/>
+  <!-- routes -->
+  <path d="M60 105 C 90 80 120 70 150 78" stroke="url(#route)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 10"/>
+  <path d="M60 105 C 75 55 110 35 150 40" stroke="url(#route)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 10" opacity="0.7"/>
+  <path d="M150 78 C 185 65 205 60 215 50" stroke="url(#route)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 10" opacity="0.7"/>
+  <!-- venues -->
+  <g fill="#2e7d4f">
+    <circle cx="60" cy="105" r="9"/>
+    <circle cx="150" cy="78" r="7"/>
+    <circle cx="150" cy="40" r="6"/>
+    <circle cx="215" cy="50" r="6" fill="#6fd08c"/>
+  </g>
+  <!-- small stage trusses on venues -->
+  <g stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M55.5 101.5h9M57 101.5l3-3.5 3 3.5" fill="none"/>
+  </g>
+</svg>

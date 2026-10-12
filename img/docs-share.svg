@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" fill="none" aria-hidden="true">
+  <!-- Kennisdeling: documenten met vinkjes en pijl -->
+  <defs>
+    <linearGradient id="doc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef6ef"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#c9e2cd" stroke-width="2">
+    <rect x="28" y="30" width="70" height="96" rx="10" fill="url(#doc)"/>
+    <rect x="90" y="16" width="70" height="96" rx="10" fill="#fff"/>
+  </g>
+  <g stroke="#2e7d4f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M104 38h42" opacity="0.35"/>
+    <path d="M104 54h30" opacity="0.35"/>
+    <path d="M104 76l6 6 12-13"/>
+    <path d="M104 98l6 6 12-13" opacity="0.6"/>
+  </g>
+  <g stroke="#2e7d4f" stroke-width="2.5" opacity="0.4" stroke-linecap="round">
+    <path d="M40 50h44M40 66h30M40 88h44M40 104h24"/>
+  </g>
+  <!-- exchange arrow -->
+  <g stroke="#6fd08c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180 60c18 0 26 8 26 20"/>
+    <path d="M196 74l10 6-10 6"/>
+    <path d="M206 116c-18 0-26-8-26-20" opacity="0"/>
+  </g>
+  <circle cx="196" cy="122" r="14" fill="#2e7d4f"/>
+  <path d="M190 122l5 5 9-10" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
