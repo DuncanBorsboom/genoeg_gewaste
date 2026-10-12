@@ -26,15 +26,14 @@
   <path class="route" d="M60 105 C 90 80 120 70 150 78" stroke="url(#route)" stroke-width="4" stroke-linecap="round"/>
   <path class="route r2" d="M60 105 C 75 55 110 35 150 40" stroke="url(#route)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
   <path class="route r3" d="M150 78 C 185 65 205 60 215 50" stroke="url(#route)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
-  <!-- venues -->
-  <g fill="#2e7d4f">
-    <circle class="venue" cx="60" cy="105" r="9"/>
-    <circle class="venue v2" cx="150" cy="78" r="7"/>
-    <circle class="venue v3" cx="150" cy="40" r="6"/>
-    <circle class="venue" cx="215" cy="50" r="6" fill="#6fd08c"/>
-  </g>
-  <!-- small stage trusses on venues -->
-  <g stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M55.5 101.5h9M57 101.5l3-3.5 3 3.5" fill="none"/>
+  <!-- venues: main venue gets a clear centered stage mark -->
+  <g class="venue-wrap">
+    <circle class="venue" cx="60" cy="105" r="9" fill="#2e7d4f"/>
+    <circle cx="150" cy="78" r="7" class="venue v2" fill="#2e7d4f"/>
+    <circle cx="150" cy="40" r="6" class="venue v3" fill="#2e7d4f"/>
+    <circle cx="215" cy="50" r="6" class="venue" fill="#6fd08c"/>
+    <!-- stage mark centered in main venue: arch + baseline -->
+    <path d="M55.2 109.5v-3.7a4.8 4.8 0 0 1 9.6 0v3.7z" fill="#fff"/>
+    <line x1="53" y1="109.5" x2="67" y2="109.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
   </g>
 </svg>
