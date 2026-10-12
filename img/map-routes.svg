@@ -11,16 +11,27 @@
   </defs>
   <!-- abstract landmass -->
   <path d="M30 30 C 60 12 120 8 170 18 C 210 26 228 52 222 84 C 216 116 180 140 130 142 C 80 144 30 128 18 96 C 8 68 10 42 30 30 Z" fill="#e9f3ea" stroke="#c9e2cd" stroke-width="2"/>
+  <style>
+    .route { stroke-dasharray: 1 10; animation: flow 2.4s linear infinite; }
+    .route.r2 { animation-duration: 3s; animation-delay: -1.2s; }
+    .route.r3 { animation-duration: 3.6s; animation-delay: -0.6s; }
+    @keyframes flow { to { stroke-dashoffset: -11; } }
+    .venue { animation: venuePulse 2.2s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    .venue.v2 { animation-delay: -0.7s; }
+    .venue.v3 { animation-delay: -1.4s; }
+    @keyframes venuePulse { 0%,100% { transform: scale(1) } 50% { transform: scale(1.28) } }
+    @media (prefers-reduced-motion: reduce) { .route, .venue { animation: none !important; } }
+  </style>
   <!-- routes -->
-  <path d="M60 105 C 90 80 120 70 150 78" stroke="url(#route)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 10"/>
-  <path d="M60 105 C 75 55 110 35 150 40" stroke="url(#route)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 10" opacity="0.7"/>
-  <path d="M150 78 C 185 65 205 60 215 50" stroke="url(#route)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 10" opacity="0.7"/>
+  <path class="route" d="M60 105 C 90 80 120 70 150 78" stroke="url(#route)" stroke-width="4" stroke-linecap="round"/>
+  <path class="route r2" d="M60 105 C 75 55 110 35 150 40" stroke="url(#route)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path class="route r3" d="M150 78 C 185 65 205 60 215 50" stroke="url(#route)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
   <!-- venues -->
   <g fill="#2e7d4f">
-    <circle cx="60" cy="105" r="9"/>
-    <circle cx="150" cy="78" r="7"/>
-    <circle cx="150" cy="40" r="6"/>
-    <circle cx="215" cy="50" r="6" fill="#6fd08c"/>
+    <circle class="venue" cx="60" cy="105" r="9"/>
+    <circle class="venue v2" cx="150" cy="78" r="7"/>
+    <circle class="venue v3" cx="150" cy="40" r="6"/>
+    <circle class="venue" cx="215" cy="50" r="6" fill="#6fd08c"/>
   </g>
   <!-- small stage trusses on venues -->
   <g stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
